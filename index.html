@@ -1,0 +1,2773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLearn - Sustainable Living Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Full Screen Video Background -->
+    <div class="video-background">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="./assets/butterfly.mp4" type="video/mp4">
+            <!-- Fallback for missing video -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>EcoLearn</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link"> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#challenges" class="nav-link"> Challenges & Games</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#quiz" class="nav-link"> Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ai-camera" class="nav-link"> AI Camera</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link"> Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"> Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="login-btn">
+                        <i class="fas fa-user"></i> Login
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Factors Button -->
+    <div class="factors-button-container">
+        <button class="factors-button" id="factors-button">
+            <i class="fas fa-cogs"></i>
+            <span>Explore Factors</span>
+        </button>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to EcoLearn</h1>
+            <p class="hero-subtitle">Discover sustainable living and earn eco-points while saving the planet</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">1,234</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-tree"></i>
+                    <span class="stat-number">5,678</span>
+                    <span class="stat-label">Trees Planted</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-recycle"></i>
+                    <span class="stat-number">9,876</span>
+                    <span class="stat-label">Waste Recycled</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=400&fit=crop"
+                alt="Nature Landscape">
+        </div> -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-hero">
+                <h2 class="section-title">About EcoLearn</h2>
+                <p class="about-tagline">Transforming Environmental Education Through Innovation</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card mission-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To create a sustainable future by empowering individuals with interactive learning experiences
+                        that make environmental conservation engaging, accessible, and rewarding.</p>
+                </div>
+
+                <div class="about-card vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>A world where every person is equipped with the knowledge and motivation to make environmentally
+                        conscious decisions that collectively create positive global impact.</p>
+                </div>
+
+                <div class="about-card impact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Our Impact</h3>
+                    <div class="impact-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Active Learners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Challenges Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Eco Points Earned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-features">
+                <h3 class="features-title">Why Choose EcoLearn?</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-gamepad"></i>
+                        <h4>Gamified Learning</h4>
+                        <p>Interactive challenges and games that make learning about sustainability fun and engaging.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-brain"></i>
+                        <h4>AI-Powered Insights</h4>
+                        <p>Smart recommendations and personalized learning paths based on your progress and interests.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Community Driven</h4>
+                        <p>Connect with like-minded individuals and participate in collaborative environmental
+                            initiatives.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <h4>Achievement System</h4>
+                        <p>Earn badges, points, and recognition for your environmental contributions and learning
+                            milestones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features factor-section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <p class="section-subtitle">Discover the powerful tools that make EcoLearn the ultimate sustainable learning
+                platform</p>
+
+            <div class="features-grid">
+                <!-- Interactive Learning -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z" />
+                        </svg>
+                    </div>
+                    <h3>Interactive Micro-Lessons</h3>
+                    <p>Engaging lessons mapped to school curriculum & local environmental issues</p>
+                    <ul class="feature-list">
+                        <li>Curriculum-aligned content</li>
+                        <li>Local issue integration</li>
+                        <li>Interactive multimedia</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                    <button class="feature-btn" onclick="exploreFeature('micro-lessons')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Explore Lessons
+                    </button>
+                </div>
+
+                <!-- Real-World Challenges -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            <path
+                                d="M12 15.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                    </div>
+                    <h3>Real-World Challenges</h3>
+                    <p>Take action with practical environmental projects and community initiatives</p>
+                    <ul class="feature-list">
+                        <li>Community projects</li>
+                        <li>Environmental action</li>
+                        <li>Impact measurement</li>
+                        <li>Peer collaboration</li>
+                    </ul>
+                    <button class="feature-btn" onclick="exploreFeature('challenges')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path
+                                d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.66c.03-.08.06-.17.09-.25C6.84 17.25 9 15 12 15s5.16 2.25 6.25 4.09c.03.08.06.17.09.25l.95 2.66 1.89-.66C18.1 16.17 16 10 17 8z" />
+                        </svg>
+                        Start Challenge
+                    </button>
+                </div>
+
+                <!-- Gamification -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z" />
+                            <path d="M12 8L14.5 13H9.5L12 8Z" />
+                        </svg>
+                    </div>
+                    <h3>Eco-Points & Rewards</h3>
+                    <p>Earn points, unlock badges, and compete on school/college leaderboards</p>
+                    <ul class="feature-list">
+                        <li>Point system</li>
+                        <li>Achievement badges</li>
+                        <li>Leaderboards</li>
+                        <li>Rewards catalog</li>
+                    </ul>
+                    <button class="feature-btn" onclick="exploreFeature('gamification')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        View Rewards
+                    </button>
+                </div>
+
+                <!-- AI Verification -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9 2L7.17 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4H16.83L15 2H9ZM12 7C14.76 7 17 9.24 17 12S14.76 17 12 17S7 14.76 7 12S9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12S10.34 15 12 15S15 13.66 15 12S13.66 9 12 9Z" />
+                            <circle cx="12" cy="12" r="1.5" />
+                        </svg>
+                    </div>
+                    <h3>AI Verification System</h3>
+                    <p>Smart verification of environmental actions using AI-powered image recognition</p>
+                    <ul class="feature-list">
+                        <li>Photo verification</li>
+                        <li>Action validation</li>
+                        <li>Fraud prevention</li>
+                        <li>Instant feedback</li>
+                    </ul>
+                    <button class="feature-btn" onclick="exploreFeature('ai-verification')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path
+                                d="M9 2L7.17 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4H16.83L15 2H9ZM12 7C14.76 7 17 9.24 17 12S14.76 17 12 17S7 14.76 7 12S9.24 7 12 7Z" />
+                        </svg>
+                        Try AI Camera
+                    </button>
+                </div>
+
+                <!-- AI Tutor -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>AI Tutor & Nudges</h3>
+                    <p>Personalized learning assistance with smart reminders and adaptive guidance</p>
+                    <ul class="feature-list">
+                        <li>Personalized tutoring</li>
+                        <li>Smart reminders</li>
+                        <li>Adaptive learning</li>
+                        <li>Progress insights</li>
+                    </ul>
+                    <button class="feature-btn" onclick="exploreFeature('ai-tutor')">
+                        <i class="fas fa-robot"></i> Chat with AI
+                    </button>
+                </div>
+
+                <!-- Dashboards -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Multi-User Dashboards</h3>
+                    <p>Specialized interfaces for teachers, eco-clubs, NGOs, and government campaigns</p>
+                    <ul class="feature-list">
+                        <li>Teacher dashboard</li>
+                        <li>Eco-club management</li>
+                        <li>NGO campaign tools</li>
+                        <li>Government reporting</li>
+                    </ul>
+                    <button class="feature-btn" onclick="exploreFeature('dashboards')">
+                        <i class="fas fa-chart-bar"></i> Access Dashboard
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feature Statistics -->
+            <div class="feature-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Active Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Schools & Colleges</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Environmental Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Trees Planted</div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="features-cta">
+                <h3>Ready to Transform Environmental Education?</h3>
+                <p>Join thousands of students, teachers, and organizations making a difference</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary" onclick="getStarted()">
+                        <i class="fas fa-rocket"></i> Get Started Free
+                    </button>
+                    <button class="cta-btn secondary" onclick="scheduleDemo()">
+                        <i class="fas fa-calendar"></i> Schedule Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Eco Journey Roadmap Section -->
+    <section id="eco-roadmap" class="eco-roadmap">
+        <div class="container">
+            <h2 class="section-title">Your Eco Journey Roadmap</h2>
+            <p class="section-subtitle">Follow this path to become an Eco-Mentor and save the planet!</p>
+
+            <div class="roadmap-container">
+                <div class="roadmap-path">
+                    <!-- Milestone 1: Learn -->
+                    <div class="milestone" data-milestone="1">
+                        <div class="milestone-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Learn</h3>
+                            <p>Start with eco-education</p>
+                        </div>
+                        <div class="milestone-number">1</div>
+                    </div>
+
+                    <!-- Milestone 2: Practice -->
+                    <div class="milestone" data-milestone="2">
+                        <div class="milestone-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Practice</h3>
+                            <p>Apply green habits daily</p>
+                        </div>
+                        <div class="milestone-number">2</div>
+                    </div>
+
+                    <!-- Milestone 3: Document -->
+                    <div class="milestone" data-milestone="3">
+                        <div class="milestone-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Document</h3>
+                            <p>Capture your eco-actions</p>
+                        </div>
+                        <div class="milestone-number">3</div>
+                    </div>
+
+                    <!-- Milestone 4: Share -->
+                    <div class="milestone" data-milestone="4">
+                        <div class="milestone-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Share</h3>
+                            <p>Inspire others to act</p>
+                        </div>
+                        <div class="milestone-number">4</div>
+                    </div>
+
+                    <!-- Milestone 5: Lead -->
+                    <div class="milestone" data-milestone="5">
+                        <div class="milestone-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Lead</h3>
+                            <p>Become an eco-champion</p>
+                        </div>
+                        <div class="milestone-number">5</div>
+                    </div>
+
+                    <!-- Milestone 6: Mentor -->
+                    <div class="milestone" data-milestone="6">
+                        <div class="milestone-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h3>Mentor</h3>
+                            <p>Guide new eco-warriors</p>
+                        </div>
+                        <div class="milestone-number">6</div>
+                    </div>
+                </div>
+
+                <!-- Final Banner -->
+                <div class="final-banner">
+                    <div class="banner-content">
+                        <div class="banner-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h2>Eco-Mentor</h2>
+                        <p>Save the Planet</p>
+                        <div class="banner-stats">
+                            <div class="stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Lives Impacted</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Trees Planted</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Eco Champion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hide Button -->
+            <div class="roadmap-actions">
+                <button class="hide-roadmap-btn" onclick="hideRoadmap()">
+                    <i class="fas fa-eye-slash"></i>
+                    Hide Roadmap
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this BEFORE the Challenges Section (around line 283) -->
+    <section id="innovation" class="innovation factor-section">
+        <div class="container">
+            <h2 class="section-title">Innovation & Impact</h2>
+            <p class="section-subtitle">Revolutionizing environmental education through AI-powered gamification</p>
+
+            <!-- Innovation Loop -->
+            <div class="innovation-loop">
+                <div class="loop-item">
+                    <div class="loop-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Learn</h3>
+                    <p>Interactive lessons mapped to curriculum</p>
+                </div>
+                <div class="loop-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="loop-item">
+                    <div class="loop-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Do</h3>
+                    <p>Real-world environmental challenges</p>
+                </div>
+                <div class="loop-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="loop-item">
+                    <div class="loop-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Prove</h3>
+                    <p>AI-verified proof of completion</p>
+                </div>
+            </div>
+
+            <!-- Impact Grid -->
+            <div class="impact-grid">
+                <div class="impact-card schools">
+                    <div class="impact-header">
+                        <i class="fas fa-school"></i>
+                        <h3>Schools</h3>
+                    </div>
+                    <ul class="impact-list">
+                        <li>Higher student engagement</li>
+                        <li>Habit building & behavior change</li>
+                        <li>NEP 2020 compliance</li>
+                        <li>Syllabus-mapped learning</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card colleges">
+                    <div class="impact-header">
+                        <i class="fas fa-university"></i>
+                        <h3>Colleges</h3>
+                    </div>
+                    <ul class="impact-list">
+                        <li>Verified certificates</li>
+                        <li>Activity points & credits</li>
+                        <li>CSR internship opportunities</li>
+                        <li>Resume value enhancement</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card government">
+                    <div class="impact-header">
+                        <i class="fas fa-landmark"></i>
+                        <h3>Government & NGOs</h3>
+                    </div>
+                    <ul class="impact-list">
+                        <li>Real-time verified reports</li>
+                        <li>Swachh Bharat integration</li>
+                        <li>LiFE scheme compliance</li>
+                        <li>Campaign effectiveness tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="stakeholders-section">
+                <h3>Key Stakeholders</h3>
+                <div class="stakeholders-grid">
+                    <div class="stakeholder-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Students (School & College)</span>
+                    </div>
+                    <div class="stakeholder-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Teachers & Eco-clubs</span>
+                    </div>
+                    <div class="stakeholder-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>NGOs</span>
+                    </div>
+                    <div class="stakeholder-item">
+                        <i class="fas fa-building"></i>
+                        <span>Government Departments</span>
+                    </div>
+                    <div class="stakeholder-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>CSR Partners</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scale & Growth -->
+            <div class="scale-section">
+                <h3>Growth & Scale</h3>
+                <div class="scale-timeline">
+                    <div class="scale-phase">
+                        <div class="phase-number">1</div>
+                        <h4>Pilot Phase</h4>
+                        <p>2-3 institutes (1 school + 1 college)</p>
+                    </div>
+                    <div class="scale-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="scale-phase">
+                        <div class="phase-number">2</div>
+                        <h4>District Level</h4>
+                        <p>Multiple schools & colleges</p>
+                    </div>
+                    <div class="scale-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="scale-phase">
+                        <div class="phase-number">3</div>
+                        <h4>State Level</h4>
+                        <p>Government scheme integration</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Roadmap -->
+            <div class="roadmap-section">
+                <h3>Feature Development Roadmap</h3>
+
+                <!-- MVP Features -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <h4>MVP (8-10 weeks)</h4>
+                        <span class="phase-badge">Phase 1</span>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Student onboarding system</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-book-open"></i>
+                            <span>Lesson modules + quizzes</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Daily/weekly challenges with proof</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Points, badges & leaderboards</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Teacher & eco-club dashboards</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>NGO/Government campaign tools</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Impact metrics & reporting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MLP Features -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <h4>MLP (Months 3-6)</h4>
+                        <span class="phase-badge">Phase 2</span>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI tutor chatbot</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <span>AI photo verification</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Personalized recommendations</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-download"></i>
+                            <span>Government scheme integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Auto-certificates & credits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Functions -->
+            <div class="ai-functions">
+                <h3>AI-Powered Features</h3>
+                <div class="ai-grid">
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>AI Tutor (NLP)</h4>
+                        <p>Natural language processing for personalized learning assistance</p>
+                    </div>
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h4>AI Proof Verification</h4>
+                        <p>Computer vision to verify photo submissions and task completion</p>
+                    </div>
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>AI Recommender</h4>
+                        <p>Smart challenge recommendations based on user behavior</p>
+                    </div>
+                    <div class="ai-card">
+                        <div class="ai-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>AI Reporting</h4>
+                        <p>Automated impact analysis and report generation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gamification Logic -->
+            <div class="gamification-section">
+                <h3>Gamification Strategy</h3>
+                <div class="gamification-grid">
+                    <div class="gamification-card">
+                        <h4>Points System</h4>
+                        <div class="gamification-details">
+                            <div class="detail-item">
+                                <i class="fas fa-school"></i>
+                                <span>School: Small eco-tasks</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-university"></i>
+                                <span>College: Bigger drives</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gamification-card">
+                        <h4>Certificates</h4>
+                        <div class="gamification-details">
+                            <div class="detail-item">
+                                <i class="fas fa-medal"></i>
+                                <span>School: Digital badges</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>College: Verified certificates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gamification-card">
+                        <h4>Leaderboards</h4>
+                        <div class="gamification-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Class → School → College → State</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demo Flow -->
+            <div class="demo-flow">
+                <h3>Hackathon Demo Flow</h3>
+                <div class="demo-tabs">
+                    <div class="demo-tab active" data-target="school-demo">
+                        <i class="fas fa-school"></i>
+                        <span>School Demo</span>
+                    </div>
+                    <div class="demo-tab" data-target="college-demo">
+                        <i class="fas fa-university"></i>
+                        <span>College Demo</span>
+                    </div>
+                    <div class="demo-tab" data-target="government-demo">
+                        <i class="fas fa-landmark"></i>
+                        <span>Government Demo</span>
+                    </div>
+                </div>
+
+                <div class="demo-content">
+                    <div class="demo-panel active" id="school-demo">
+                        <div class="demo-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <span>Quiz completion</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <span>Eco-task assignment</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <span>Proof submission</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <span>AI feedback</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-panel" id="college-demo">
+                        <div class="demo-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <span>Eco-drive participation</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <span>QR check-in</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <span>AI verification</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <span>Auto certificate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-panel" id="government-demo">
+                        <div class="demo-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <span>Dashboard access</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <span>State-wide impact view</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <span>Verified reports</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <span>Scheme integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Request -->
+            <div class="support-section">
+                <h3>Support & Partnerships</h3>
+                <div class="support-grid">
+                    <div class="support-item">
+                        <i class="fas fa-server"></i>
+                        <h4>Infrastructure Support</h4>
+                        <p>Technical infrastructure and hosting assistance</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-door-open"></i>
+                        <h4>Institute Access</h4>
+                        <p>Connections to schools and colleges for pilot</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-edit"></i>
+                        <h4>Content Co-creation</h4>
+                        <p>Educational content development partnership</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-gift"></i>
+                        <h4>CSR Rewards</h4>
+                        <p>Corporate social responsibility partnerships</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4>NGO Partnerships</h4>
+                        <p>Non-governmental organization collaborations</p>
+                    </div>
+                    <div class="support-item">
+                        <i class="fas fa-flag"></i>
+                        <h4>Government Partnerships</h4>
+                        <p>Integration with government schemes and programs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" class="challenges factor-section">
+        <div class="container">
+            <h2 class="section-title">Daily Challenges</h2>
+
+            <div class="challenge-tabs">
+                <button class="tab-btn active" data-tab="daily">Daily Challenges</button>
+                <button class="tab-btn" data-tab="location">Location-Based</button>
+            </div>
+
+            <div class="challenges-grid" id="daily-challenges">
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Waste Segregation</h3>
+                    <p>Properly separate your household waste into recyclable and non-recyclable items.</p>
+                    <div class="challenge-reward">
+                        <span class="reward-points">+10 points</span>
+                    </div>
+                    <button class="challenge-btn" onclick="completeDailyChallenge(this, 'Waste Segregation', 10)">
+                        <i class="fas fa-check"></i> Complete
+                    </button>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Plant a Tree</h3>
+                    <p>Plant a sapling in your garden or community area and nurture it.</p>
+                    <div class="challenge-reward">
+                        <span class="reward-points">+20 points</span>
+                    </div>
+                    <button class="challenge-btn" onclick="completeDailyChallenge(this, 'Plant a Tree', 20)">
+                        <i class="fas fa-check"></i> Complete
+                    </button>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Water Conservation</h3>
+                    <p>Implement water-saving practices in your daily routine.</p>
+                    <div class="challenge-reward">
+                        <span class="reward-points">+15 points</span>
+                    </div>
+                    <button class="challenge-btn" onclick="completeDailyChallenge(this, 'Water Conservation', 15)">
+                        <i class="fas fa-check"></i> Complete
+                    </button>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Energy Saving</h3>
+                    <p>Switch to energy-efficient appliances and turn off unused electronics.</p>
+                    <div class="challenge-reward">
+                        <span class="reward-points">+12 points</span>
+                    </div>
+                    <button class="challenge-btn" onclick="completeDailyChallenge(this, 'Energy Saving', 12)">
+                        <i class="fas fa-check"></i> Complete
+                    </button>
+                </div>
+            </div>
+
+            <!-- Location-Based Challenges -->
+            <div class="location-challenges" id="location-challenges" style="display: none;">
+                <div class="location-header">
+                    <h3>Challenges Near You</h3>
+                    <button id="get-location" class="location-btn">
+                        <i class="fas fa-map-marker-alt"></i> Find Local Challenges
+                    </button>
+                </div>
+
+                <div class="map-container">
+                    <div id="challenges-map"
+                        style="height: 300px; border-radius: 10px; background: #f0f0f0; position: relative;">
+                        <div class="map-placeholder" id="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Click "Find Local Challenges" to see nearby environmental activities</p>
+                        </div>
+                        <div id="google-map" style="height: 100%; width: 100%; border-radius: 10px; display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nearby-challenges">
+                    <h4>Nearby Environmental Activities</h4>
+                    <div class="location-challenges-list" id="location-challenges-list">
+                        <div class="location-challenge-card">
+                            <div class="challenge-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Enable location to see challenges</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="points-display">
+                <div class="points-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Your Eco-Points</h3>
+                    <div class="points-number" id="points">0</div>
+                    <p>Keep completing challenges to earn more points!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile factor-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Your Profile</h2>
+            <p class="section-subtitle">Welcome, <span id="profile-name">Guest</span></p>
+
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <div class="profile-stat-label">Total Eco-Points</div>
+                    <div class="profile-stat-value" id="profile-points">0</div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-stat-label">Quizzes Completed</div>
+                    <div class="profile-stat-value" id="profile-quizzes">0</div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-stat-label">Best Quiz Score</div>
+                    <div class="profile-stat-value" id="profile-best">0%</div>
+                </div>
+            </div>
+
+            <div class="profile-history">
+                <h3>Recent Quiz History</h3>
+                <div id="profile-history-list" class="history-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Camera Section -->
+    <section id="ai-camera" class="ai-camera factor-section">
+        <div class="container">
+            <h2 class="section-title">AI Eco Assistant</h2>
+            <p class="section-subtitle">Upload or take a photo of waste items and get AI-powered segregation guidance
+            </p>
+
+            <div class="ai-mode-selector">
+                <button class="mode-btn active" data-mode="camera">
+                    <i class="fas fa-camera"></i> Camera Mode
+                </button>
+                <button class="mode-btn" data-mode="upload">
+                    <i class="fas fa-upload"></i> Upload Image
+                </button>
+            </div>
+
+            <!-- Image Upload Container -->
+            <div class="upload-container" style="display: none;">
+                <div class="upload-area">
+                    <div class="upload-zone" id="upload-zone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>Upload Waste Item Image</h3>
+                        <p>Drag & drop an image here or click to browse</p>
+                        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                        <button class="upload-btn" onclick="document.getElementById('image-upload').click()">
+                            <i class="fas fa-folder-open"></i> Browse Files
+                        </button>
+                    </div>
+                    <div class="upload-preview" id="upload-preview" style="display: none;">
+                        <img id="uploaded-image" alt="Uploaded Image">
+                        <div class="upload-actions">
+                            <button id="analyze-uploaded" class="action-btn primary">
+                                <i class="fas fa-brain"></i> Analyze for Segregation
+                            </button>
+                            <button id="clear-upload" class="action-btn secondary">
+                                <i class="fas fa-trash"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="camera-container">
+                <div class="camera-preview">
+                    <video id="camera-video" autoplay muted playsinline></video>
+                    <canvas id="camera-canvas" style="display: none;"></canvas>
+                    <div class="camera-overlay">
+                        <div class="camera-frame">
+                            <div class="corner top-left"></div>
+                            <div class="corner top-right"></div>
+                            <div class="corner bottom-left"></div>
+                            <div class="corner bottom-right"></div>
+                        </div>
+                    </div>
+                    <div class="camera-controls">
+                        <button id="start-camera" class="camera-btn primary">
+                            <i class="fas fa-camera"></i>
+                            Start Camera
+                        </button>
+                        <button id="capture-photo" class="camera-btn secondary" disabled>
+                            <i class="fas fa-circle"></i>
+                            Capture Photo
+                        </button>
+                        <button id="retake-photo" class="camera-btn secondary" style="display: none;">
+                            <i class="fas fa-redo"></i>
+                            Retake
+                        </button>
+                    </div>
+                </div>
+
+                <div class="photo-result" style="display: none;">
+                    <div class="captured-photo">
+                        <img id="captured-image" alt="Captured Photo">
+                        <div class="photo-actions">
+                            <button id="analyze-photo" class="action-btn">
+                                <i class="fas fa-brain"></i>
+                                Analyze with AI
+                            </button>
+                            <button id="share-photo" class="action-btn">
+                                <i class="fas fa-share"></i>
+                                Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-suggestions" style="display: none;">
+                <h3>AI Waste Segregation Analysis</h3>
+
+                <!-- Waste Identification Result -->
+                <div class="waste-identification">
+                    <div class="identified-item">
+                        <div class="item-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="item-details">
+                            <h4>Identified Item</h4>
+                            <p id="identified-item-name">Analyzing...</p>
+                            <span class="confidence-score" id="confidence-score">Confidence: --</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="segregation-guide">
+                    <div class="bin-recommendation">
+                        <div class="recommended-bin" id="recommended-bin">
+                            <div class="bin-icon">
+                                <i class="fas fa-trash"></i>
+                            </div>
+                            <h4>Recommended Bin</h4>
+                            <p id="bin-type">Analyzing...</p>
+                        </div>
+                    </div>
+
+                    <div class="segregation-tips">
+                        <h4>Segregation Instructions</h4>
+                        <div class="tips-list" id="segregation-instructions">
+                            <p>Analyzing item for proper disposal instructions...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suggestions-container">
+                    <div class="suggestion-card">
+                        <div class="suggestion-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="suggestion-content">
+                            <h4>Recycling Tips</h4>
+                            <p id="recycling-tips">Loading suggestions...</p>
+                        </div>
+                    </div>
+
+                    <div class="suggestion-card">
+                        <div class="suggestion-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="suggestion-content">
+                            <h4>Eco-Friendly Alternatives</h4>
+                            <p id="eco-alternatives">Loading suggestions...</p>
+                        </div>
+                    </div>
+
+                    <div class="suggestion-card">
+                        <div class="suggestion-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="suggestion-content">
+                            <h4>Environmental Impact</h4>
+                            <p id="environmental-impact">Loading suggestions...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-actions">
+                    <button id="save-suggestions" class="action-btn primary">
+                        <i class="fas fa-save"></i>
+                        Save to My Goals
+                    </button>
+                    <button id="get-more-suggestions" class="action-btn secondary">
+                        <i class="fas fa-refresh"></i>
+                        Get More Suggestions
+                    </button>
+                </div>
+            </div>
+
+            <div class="camera-tips">
+                <h3>Tips for Better AI Analysis</h3>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <i class="fas fa-sun"></i>
+                        <h4>Good Lighting</h4>
+                        <p>Take photos in natural daylight for better image quality</p>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h4>Clear Focus</h4>
+                        <p>Ensure the main subject is clearly visible and in focus</p>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-camera"></i>
+                        <h4>Good Angle</h4>
+                        <p>Capture from different angles to show the full context</p>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-eye"></i>
+                        <h4>Show Details</h4>
+                        <p>Include relevant environmental elements in your photo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="quiz factor-section">
+        <div class="container">
+            <h2 class="section-title">Eco Knowledge Quiz</h2>
+            <p class="section-subtitle">Test your environmental knowledge and earn eco-points!</p>
+
+            <div class="quiz-categories">
+                <div class="category-card" data-category="basic">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Basic Environmental Knowledge</h3>
+                    <p>Fundamental environmental concepts for young learners (Class 1-6)</p>
+                    <div class="category-stats">
+                        <span class="difficulty">Beginner</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="basic">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="intermediate">
+                    <div class="category-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Intermediate Environmental Knowledge</h3>
+                    <p>More detailed environmental concepts and practical solutions</p>
+                    <div class="category-stats">
+                        <span class="difficulty">Intermediate</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="intermediate">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="advanced">
+                    <div class="category-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Advanced Environmental Knowledge</h3>
+                    <p>Complex environmental challenges and comprehensive solutions</p>
+                    <div class="category-stats">
+                        <span class="difficulty">Advanced</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="advanced">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="level2_basic">
+                    <div class="category-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Level 2 Basic (Class 7-12)</h3>
+                    <p>Environmental concepts for secondary school students</p>
+                    <div class="category-stats">
+                        <span class="difficulty">Secondary Basic</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="level2_basic">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="level2_intermediate">
+                    <div class="category-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Level 2 Intermediate (Class 7-12)</h3>
+                    <p>Advanced environmental concepts for secondary students</p>
+                    <div class="category-stats">
+                        <span class="difficulty">Secondary Intermediate</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="level2_intermediate">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="level2_advanced">
+                    <div class="category-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Level 2 Advanced (Class 7-12)</h3>
+                    <p>Expert-level environmental science for secondary students</p>
+                    <div class="category-stats">
+                        <span class="difficulty">Secondary Expert</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="level2_advanced">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="level3_basic">
+                    <div class="category-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Level 3 Basic (College)</h3>
+                    <p>Fundamental environmental science concepts for college students</p>
+                    <div class="category-stats">
+                        <span class="difficulty">College Basic</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="level3_basic">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="level3_intermediate">
+                    <div class="category-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Level 3 Intermediate (College)</h3>
+                    <p>Advanced environmental science concepts for college students</p>
+                    <div class="category-stats">
+                        <span class="difficulty">College Intermediate</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="level3_intermediate">Start Quiz</button>
+                </div>
+
+                <div class="category-card" data-category="level3_advanced">
+                    <div class="category-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Level 3 Advanced (College)</h3>
+                    <p>Expert-level environmental science for college students</p>
+                    <div class="category-stats">
+                        <span class="difficulty">College Expert</span>
+                        <span class="questions">30 Questions</span>
+                    </div>
+                    <button class="start-quiz-btn" data-category="level3_advanced">Start Quiz</button>
+                </div>
+            </div>
+
+            <div class="quiz-container" style="display: none;">
+                <div class="quiz-header">
+                    <button id="quiz-back-btn" class="quiz-back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Categories
+                    </button>
+                    <div class="quiz-info">
+                        <h3 id="quiz-title">Quiz Title</h3>
+                        <p id="quiz-description">Quiz description</p>
+                    </div>
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">Question 1 of 10</span>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <div class="question-card">
+                        <h4 id="question-text">Question text will appear here</h4>
+                        <div class="options-container" id="options-container">
+                            <!-- Options will be dynamically added here -->
+                        </div>
+                        <div class="question-navigation">
+                            <button id="prev-question" class="nav-btn" disabled>
+                                <i class="fas fa-arrow-left"></i> Previous
+                            </button>
+                            <button id="next-question" class="nav-btn">
+                                Next <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-actions">
+                    <button id="submit-quiz" class="submit-quiz-btn" style="display: none;">
+                        <i class="fas fa-check-circle"></i> Submit Quiz
+                    </button>
+                    <button id="restart-quiz" class="restart-quiz-btn">
+                        <i class="fas fa-redo"></i> Restart Quiz
+                    </button>
+                </div>
+            </div>
+
+            <div class="quiz-results" style="display: none;">
+                <div class="results-header">
+                    <h3>Quiz Results</h3>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span id="score-percentage">85%</span>
+                        </div>
+                        <div class="score-details">
+                            <p>You got <span id="correct-answers">8</span> out of <span id="total-questions">10</span>
+                                correct!</p>
+                            <p class="score-message" id="score-message">Great job! You're an eco-expert!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-breakdown">
+                    <h4>Question Review</h4>
+                    <div class="question-review" id="question-review">
+                        <!-- Question review will be dynamically added here -->
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="try-another-quiz" class="action-btn primary">
+                        <i class="fas fa-play"></i> Try Another Quiz
+                    </button>
+                    <button id="share-results" class="action-btn secondary">
+                        <i class="fas fa-share"></i> Share Results
+                    </button>
+                </div>
+            </div>
+
+            <div class="quiz-leaderboard">
+                <h3>Top Eco Champions</h3>
+                <div class="leaderboard-container">
+                    <div class="leaderboard-item">
+                        <div class="rank">🥇</div>
+                        <div class="player-info">
+                            <h4>EcoMaster</h4>
+                            <p>95% Average Score</p>
+                        </div>
+                        <div class="points">2,450 pts</div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank">🥈</div>
+                        <div class="player-info">
+                            <h4>GreenGuru</h4>
+                            <p>92% Average Score</p>
+                        </div>
+                        <div class="points">2,180 pts</div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank">🥉</div>
+                        <div class="player-info">
+                            <h4>NatureLover</h4>
+                            <p>89% Average Score</p>
+                        </div>
+                        <div class="points">1,950 pts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Waste Sorting Games Section -->
+    <section id="waste-games" class="waste-games factor-section">
+        <div class="container">
+            <h2 class="section-title">♻ Waste Sorting Games</h2>
+            <p class="section-subtitle">Learn about recycling through interactive games!</p>
+
+            <!-- Game Selection -->
+            <div class="game-selection" id="game-selection">
+                <div class="games-container">
+                    <div class="game-card" onclick="startGame('click-sort')">
+                        <div class="game-icon">🎯</div>
+                        <div class="game-title">Click & Sort Game</div>
+                        <div class="game-description">
+                            Test your knowledge by clicking the correct bin for each waste item.
+                            Get points for correct answers and learn about organic vs plastic waste!
+                        </div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('drag-drop')">
+                        <div class="game-icon">🖱️</div>
+                        <div class="game-title">Drag & Drop Game</div>
+                        <div class="game-description">
+                            Drag waste items into the dustbin using your mouse.
+                            A fun interactive way to practice waste sorting skills!
+                        </div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('memory-match')">
+                        <div class="game-icon">🧠</div>
+                        <div class="game-title">Memory Match Game</div>
+                        <div class="game-description">Match pairs of recyclable items</div>
+                        <div class="game-difficulty">Difficulty: Medium</div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('trash-sorter')">
+                        <div class="game-icon">♻️</div>
+                        <div class="game-title">Advanced Trash Sorter</div>
+                        <div class="game-description">Drag & drop items into correct bins</div>
+                        <div class="game-difficulty">Difficulty: Hard</div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('plant-tree')">
+                        <div class="game-icon">🌱</div>
+                        <div class="game-title">Plant the Tree</div>
+                        <div class="game-description">Grow trees by providing water & sunlight</div>
+                        <div class="game-difficulty">Difficulty: Easy</div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('save-ocean')">
+                        <div class="game-icon">🌊</div>
+                        <div class="game-title">Save the Ocean</div>
+                        <div class="game-description">Clean ocean by collecting trash with your boat</div>
+                        <div class="game-difficulty">Difficulty: Medium</div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('clean-city')">
+                        <div class="game-icon">🧹</div>
+                        <div class="game-title">Clean the City</div>
+                        <div class="game-description">Walk around the city and collect litter</div>
+                        <div class="game-difficulty">Difficulty: Easy</div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('rainwater-collector')">
+                        <div class="game-icon">💧</div>
+                        <div class="game-title">Rainwater Collector</div>
+                        <div class="game-description">Collect raindrops to conserve water</div>
+                        <div class="game-difficulty">Difficulty: Easy</div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('solar-panel-builder')">
+                        <div class="game-icon">☀️</div>
+                        <div class="game-title">Solar Panel Builder</div>
+                        <div class="game-description">Build solar panels to generate clean energy</div>
+                        <div class="game-difficulty">Difficulty: Medium</div>
+                    </div>
+
+                    <div class="game-card" onclick="startGame('save-the-forest')">
+                        <div class="game-icon">🌳</div>
+                        <div class="game-title">Save the Forest</div>
+                        <div class="game-description">Fight forest fires and protect trees</div>
+                        <div class="game-difficulty">Difficulty: Hard</div>
+                    </div>
+                </div>
+
+                <div class="games-footer">
+                    <p>Made with ♻️ for environmental education</p>
+                </div>
+            </div>
+
+            <!-- Click & Sort Game -->
+            <div class="game-container" id="click-sort-game" style="display: none;">
+                <div class="game-header">
+                    <h3>♻ Waste Sorting Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div id="item">🍌 Banana Peel</div>
+                <div id="bins">
+                    <div class="bin" id="organic">🍃 Organic</div>
+                    <div class="bin" id="plastic">🥤 Plastic</div>
+                    <div class="bin" id="paper">📄 Paper</div>
+                    <div class="bin" id="glass">🍾 Glass</div>
+                    <div class="bin" id="metal">🥫 Metal</div>
+                </div>
+                <div id="score">Score: 0</div>
+            </div>
+
+            <!-- Drag & Drop Game -->
+            <div class="game-container" id="drag-drop-game" style="display: none;">
+                <div class="game-header">
+                    <h3>🖱️ Drag & Drop Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="drag-drop-info">
+                    <p>Drag the waste items into the correct dustbin!</p>
+                </div>
+
+                <div id="gameArea">
+                    <!-- Waste items -->
+                    <div id="items">
+                        <div class="waste" draggable="true" data-type="organic" id="leaf">🍂</div>
+                        <div class="waste" draggable="true" data-type="paper" id="paper">📄</div>
+                        <div class="waste" draggable="true" data-type="plastic" id="bottle">🥤</div>
+                        <div class="waste" draggable="true" data-type="organic" id="banana">🍌</div>
+                        <div class="waste" draggable="true" data-type="plastic" id="wrapper">🍫</div>
+                        <div class="waste" draggable="true" data-type="plastic" id="bag">🛍️</div>
+                        <div class="waste" draggable="true" data-type="paper" id="newspaper">📰</div>
+                        <div class="waste" draggable="true" data-type="glass" id="glass">🍾</div>
+                        <div class="waste" draggable="true" data-type="metal" id="can">🥫</div>
+                        <div class="waste" draggable="true" data-type="organic" id="apple">🍎</div>
+                        <div class="waste" draggable="true" data-type="glass" id="jar">🫙</div>
+                        <div class="waste" draggable="true" data-type="metal" id="scrap">🔧</div>
+                    </div>
+
+                    <!-- Dustbins -->
+                    <div id="bins">
+                        <div class="bin" data-type="organic">🍃 Organic</div>
+                        <div class="bin" data-type="plastic">🥤 Plastic</div>
+                        <div class="bin" data-type="paper">📄 Paper</div>
+                        <div class="bin" data-type="glass">🍾 Glass</div>
+                        <div class="bin" data-type="metal">🥫 Metal</div>
+                    </div>
+                </div>
+
+                <div id="dragScore">Score: 0</div>
+            </div>
+
+            <!-- Memory Match Game -->
+            <div class="game-container" id="memory-match-game" style="display: none;">
+                <div class="game-header">
+                    <h3>🧠 Memory Match Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="memory-info">
+                    <p>Match waste items with their correct bins!</p>
+                </div>
+
+                <div id="gameInfo">
+                    <div id="memoryScore">Score: 0</div>
+                    <div id="moves">Moves: 0</div>
+                    <div id="timer">Time: 0s</div>
+                </div>
+
+                <div id="gameBoard">
+                    <!-- Cards will be generated by JavaScript -->
+                </div>
+
+                <div id="gameControls">
+                    <button id="newGameBtn">🔄 New Game</button>
+                    <button id="hintBtn">💡 Hint</button>
+                </div>
+
+                <div id="message"></div>
+            </div>
+
+            <!-- Advanced Trash Sorter Game -->
+            <div class="game-container" id="trash-sorter-game" style="display: none;">
+                <div class="game-header">
+                    <h3>♻️ Advanced Trash Sorter</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="trash-game-info">
+                    <div class="info-panel">
+                        <div class="stat-item">
+                            <span class="stat-label">Score:</span>
+                            <span id="trash-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Time:</span>
+                            <span id="trash-timer">60</span>s
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Level:</span>
+                            <span id="trash-level">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Streak:</span>
+                            <span id="trash-streak">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="trash-game-area">
+                    <div class="falling-items-zone">
+                        <!-- Falling items will appear here -->
+                    </div>
+                </div>
+
+                <div id="trash-bins">
+                    <div class="trash-bin" data-type="plastic">
+                        <div class="bin-icon">🧴</div>
+                        <div class="bin-label">Plastic</div>
+                        <div class="bin-counter">0</div>
+                    </div>
+                    <div class="trash-bin" data-type="paper">
+                        <div class="bin-icon">📄</div>
+                        <div class="bin-label">Paper</div>
+                        <div class="bin-counter">0</div>
+                    </div>
+                    <div class="trash-bin" data-type="organic">
+                        <div class="bin-icon">🍎</div>
+                        <div class="bin-label">Organic</div>
+                        <div class="bin-counter">0</div>
+                    </div>
+                    <div class="trash-bin" data-type="metal">
+                        <div class="bin-icon">🥫</div>
+                        <div class="bin-label">Metal</div>
+                        <div class="bin-counter">0</div>
+                    </div>
+                    <div class="trash-bin" data-type="glass">
+                        <div class="bin-icon">🍾</div>
+                        <div class="bin-label">Glass</div>
+                        <div class="bin-counter">0</div>
+                    </div>
+                </div>
+
+                <div class="trash-game-controls">
+                    <button id="start-trash-game" class="game-control-btn">🎮 Start Game</button>
+                    <button id="pause-trash-game" class="game-control-btn" disabled>⏸️ Pause</button>
+                    <button id="reset-trash-game" class="game-control-btn">🔄 Reset</button>
+                </div>
+
+                <div class="trash-game-instructions">
+                    <h4>🎯 How to Play:</h4>
+                    <ul>
+                        <li>Drag falling items to the correct bins</li>
+                        <li>Correct sorting: +10 points, Wrong: -5 points</li>
+                        <li>Build streaks for bonus points</li>
+                        <li>Speed increases with each level</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Plant the Tree Game -->
+            <div class="game-container" id="plant-tree-game" style="display: none;">
+                <div class="game-header">
+                    <h3>🌱 Plant the Tree Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="plant-game-info">
+                    <div class="plant-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Score:</span>
+                            <span id="plant-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Trees:</span>
+                            <span id="trees-planted">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Level:</span>
+                            <span id="plant-level">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">CO₂ Saved:</span>
+                            <span id="co2-saved">0</span>kg
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-controls">
+                    <button id="water-btn" class="plant-action-btn">
+                        <span class="btn-icon">💧</span>
+                        <span class="btn-text">Water</span>
+                        <span class="btn-cost">Cost: 5</span>
+                    </button>
+                    <button id="sun-btn" class="plant-action-btn">
+                        <span class="btn-icon">☀️</span>
+                        <span class="btn-text">Sunlight</span>
+                        <span class="btn-cost">Cost: 3</span>
+                    </button>
+                    <button id="fertilizer-btn" class="plant-action-btn">
+                        <span class="btn-icon">🧪</span>
+                        <span class="btn-text">Fertilizer</span>
+                        <span class="btn-cost">Cost: 10</span>
+                    </button>
+                    <button id="plant-seed-btn" class="plant-action-btn">
+                        <span class="btn-icon">🌰</span>
+                        <span class="btn-text">Plant Seed</span>
+                        <span class="btn-cost">Cost: 15</span>
+                    </button>
+                </div>
+
+                <div id="plant-garden">
+                    <div class="garden-background">
+                        <div class="sky"></div>
+                        <div class="ground"></div>
+                        <div class="sun-indicator" id="sun-indicator">☀️</div>
+                        <div class="weather-effects" id="weather-effects"></div>
+                    </div>
+                    <div class="plants-container" id="plants-container">
+                        <!-- Plants will be added here -->
+                    </div>
+                </div>
+
+                <div class="plant-game-controls">
+                    <button id="start-plant-game" class="game-control-btn">🎮 Start Growing</button>
+                    <button id="auto-water" class="game-control-btn">🤖 Auto Water</button>
+                    <button id="reset-plant-game" class="game-control-btn">🔄 Reset Garden</button>
+                </div>
+
+                <div class="plant-game-instructions">
+                    <h4>🌱 How to Grow Trees:</h4>
+                    <div class="instruction-grid">
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🌰</span>
+                            <span>1. Plant seeds in the garden</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">💧</span>
+                            <span>2. Water seeds to make them sprout</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">☀️</span>
+                            <span>3. Provide sunlight for growth</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🧪</span>
+                            <span>4. Use fertilizer for faster growth</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🌳</span>
+                            <span>5. Watch your forest grow!</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🏆</span>
+                            <span>6. Earn points and save CO₂</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-achievements">
+                    <h4>🏆 Achievements:</h4>
+                    <div class="achievements-grid" id="plant-achievements">
+                        <div class="achievement locked" data-achievement="first-tree">
+                            <span class="achievement-icon">🌱</span>
+                            <span class="achievement-text">First Tree</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="forest-maker">
+                            <span class="achievement-icon">🌲</span>
+                            <span class="achievement-text">Forest Maker</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="eco-warrior">
+                            <span class="achievement-icon">🌍</span>
+                            <span class="achievement-text">Eco Warrior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save the Ocean Game -->
+            <div class="game-container" id="save-ocean-game" style="display: none;">
+                <div class="game-header">
+                    <h3>🌊 Save the Ocean Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="ocean-game-info">
+                    <div class="ocean-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Score:</span>
+                            <span id="ocean-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Trash Collected:</span>
+                            <span id="trash-collected">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Level:</span>
+                            <span id="ocean-level">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Lives:</span>
+                            <span id="ocean-lives">❤️❤️❤️</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Time:</span>
+                            <span id="ocean-timer">60</span>s
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ocean-controls">
+                    <div class="control-info">
+                        <span>🎮 Use Arrow Keys or Touch to Move Boat</span>
+                    </div>
+                    <div class="mobile-controls" id="mobile-controls">
+                        <button class="move-btn" id="move-left">⬅️</button>
+                        <button class="move-btn" id="move-right">➡️</button>
+                    </div>
+                </div>
+
+                <div id="ocean-container">
+                    <div class="ocean-background">
+                        <div class="water-surface"></div>
+                        <div class="waves"></div>
+                    </div>
+
+                    <div id="ocean-game-area">
+                        <div id="boat">⛵</div>
+                        <div class="trash-items" id="trash-items">
+                            <!-- Falling trash items -->
+                        </div>
+                        <div class="sea-life" id="sea-life">
+                            <!-- Marine animals to avoid -->
+                        </div>
+                        <div class="power-ups" id="power-ups">
+                            <!-- Special power-ups -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ocean-game-controls">
+                    <button id="start-ocean-game" class="game-control-btn">🎮 Start Cleaning</button>
+                    <button id="pause-ocean-game" class="game-control-btn" disabled>⏸️ Pause</button>
+                    <button id="reset-ocean-game" class="game-control-btn">🔄 Reset</button>
+                </div>
+
+                <div class="ocean-game-instructions">
+                    <h4>🌊 How to Save the Ocean:</h4>
+                    <div class="instruction-grid">
+                        <div class="instruction-item">
+                            <span class="instruction-icon">⛵</span>
+                            <span>Move boat left/right to collect trash</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🗑️</span>
+                            <span>Collect plastic bottles, bags, and waste</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🐠</span>
+                            <span>Avoid marine animals (they're protected!)</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">⚡</span>
+                            <span>Collect power-ups for special abilities</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">❤️</span>
+                            <span>Don't let too much trash reach the bottom</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🏆</span>
+                            <span>Clean the ocean and save marine life!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ocean-achievements">
+                    <h4>🏆 Ocean Achievements:</h4>
+                    <div class="achievements-grid" id="ocean-achievements">
+                        <div class="achievement locked" data-achievement="first-cleanup">
+                            <span class="achievement-icon">🧹</span>
+                            <span class="achievement-text">First Cleanup</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="ocean-guardian">
+                            <span class="achievement-icon">🌊</span>
+                            <span class="achievement-text">Ocean Guardian</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="marine-protector">
+                            <span class="achievement-icon">🐋</span>
+                            <span class="achievement-text">Marine Protector</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clean the City Game -->
+            <div class="game-container" id="clean-city-game" style="display: none;">
+                <div class="game-header">
+                    <h3>🧹 Clean the City Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="city-game-info">
+                    <div class="city-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Score:</span>
+                            <span id="city-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Trash Cleaned:</span>
+                            <span id="trash-cleaned">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Level:</span>
+                            <span id="city-level">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Time:</span>
+                            <span id="city-timer">60</span>s
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Combo:</span>
+                            <span id="city-combo">0</span>x
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-controls">
+                    <div class="control-info">
+                        <span>🎮 Use Arrow Keys or WASD to Move</span>
+                    </div>
+                    <div class="mobile-controls" id="city-mobile-controls">
+                        <div class="control-row">
+                            <button class="city-move-btn" id="city-move-up">⬆️</button>
+                        </div>
+                        <div class="control-row">
+                            <button class="city-move-btn" id="city-move-left">⬅️</button>
+                            <button class="city-move-btn" id="city-move-down">⬇️</button>
+                            <button class="city-move-btn" id="city-move-right">➡️</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="city-container">
+                    <div class="city-background">
+                        <div class="sky-layer"></div>
+                        <div class="buildings-layer">
+                            <div class="building" style="left: 10%; height: 60px;">🏢</div>
+                            <div class="building" style="left: 25%; height: 80px;">🏬</div>
+                            <div class="building" style="left: 40%; height: 70px;">🏪</div>
+                            <div class="building" style="left: 60%; height: 90px;">🏢</div>
+                            <div class="building" style="left: 80%; height: 65px;">🏬</div>
+                        </div>
+                        <div class="street-layer"></div>
+                        <div class="sidewalk-layer"></div>
+                    </div>
+
+                    <div id="city-game-area">
+                        <div id="city-player">🚶</div>
+                        <div class="city-trash-items" id="city-trash-items">
+                            <!-- Trash items will appear here -->
+                        </div>
+                        <div class="city-obstacles" id="city-obstacles">
+                            <!-- Obstacles like cars, trees -->
+                        </div>
+                        <div class="city-npcs" id="city-npcs">
+                            <!-- NPCs walking around -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-game-controls">
+                    <button id="start-city-game" class="game-control-btn">🎮 Start Cleaning</button>
+                    <button id="pause-city-game" class="game-control-btn" disabled>⏸️ Pause</button>
+                    <button id="reset-city-game" class="game-control-btn">🔄 Reset</button>
+                </div>
+
+                <div class="city-game-instructions">
+                    <h4>🧹 How to Clean the City:</h4>
+                    <div class="instruction-grid">
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🚶</span>
+                            <span>Move around the city using arrow keys</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🗑️</span>
+                            <span>Walk over trash to automatically collect it</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🚗</span>
+                            <span>Avoid cars and other obstacles</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">⚡</span>
+                            <span>Build combos by collecting trash quickly</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🏆</span>
+                            <span>Clean as much as possible before time runs out</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🌟</span>
+                            <span>Level up by reaching score milestones</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city-achievements">
+                    <h4>🏆 City Achievements:</h4>
+                    <div class="achievements-grid" id="city-achievements">
+                        <div class="achievement locked" data-achievement="street-sweeper">
+                            <span class="achievement-icon">🧹</span>
+                            <span class="achievement-text">Street Sweeper</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="city-hero">
+                            <span class="achievement-icon">🦸</span>
+                            <span class="achievement-text">City Hero</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="clean-machine">
+                            <span class="achievement-icon">⚡</span>
+                            <span class="achievement-text">Clean Machine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rainwater Collector Game -->
+            <div class="game-container" id="rainwater-collector-game" style="display: none;">
+                <div class="game-header">
+                    <h3>💧 Rainwater Collector Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="rainwater-game-info">
+                    <div class="rainwater-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Score:</span>
+                            <span id="rainwater-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Water Collected:</span>
+                            <span id="water-collected">0</span>L
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Level:</span>
+                            <span id="rainwater-level">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Time:</span>
+                            <span id="rainwater-timer">60</span>s
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Streak:</span>
+                            <span id="rainwater-streak">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rainwater-controls">
+                    <div class="control-info">
+                        <span>🎮 Use Arrow Keys or Touch to Move Bucket</span>
+                    </div>
+                    <div class="mobile-controls" id="rainwater-mobile-controls">
+                        <button class="rainwater-move-btn" id="rainwater-move-left">⬅️</button>
+                        <button class="rainwater-move-btn" id="rainwater-move-right">➡️</button>
+                    </div>
+                </div>
+
+                <div id="rainwater-container">
+                    <div class="weather-background">
+                        <div class="storm-clouds">
+                            <div class="cloud" style="left: 10%; animation-delay: 0s;">☁️</div>
+                            <div class="cloud" style="left: 30%; animation-delay: 1s;">⛅</div>
+                            <div class="cloud" style="left: 60%; animation-delay: 2s;">☁️</div>
+                            <div class="cloud" style="left: 85%; animation-delay: 0.5s;">🌧️</div>
+                        </div>
+                        <div class="lightning-effects" id="lightning-effects"></div>
+                    </div>
+
+                    <div id="rainwater-game-area">
+                        <div id="rainwater-bucket">🪣</div>
+                        <div class="raindrops-container" id="raindrops-container">
+                            <!-- Falling raindrops -->
+                        </div>
+                        <div class="special-drops" id="special-drops">
+                            <!-- Special water drops -->
+                        </div>
+                        <div class="obstacles" id="rain-obstacles">
+                            <!-- Obstacles like leaves, debris -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rainwater-game-controls">
+                    <button id="start-rainwater-game" class="game-control-btn">🎮 Start Collecting</button>
+                    <button id="pause-rainwater-game" class="game-control-btn" disabled>⏸️ Pause</button>
+                    <button id="reset-rainwater-game" class="game-control-btn">🔄 Reset</button>
+                </div>
+
+                <div class="rainwater-game-instructions">
+                    <h4>💧 How to Collect Rainwater:</h4>
+                    <div class="instruction-grid">
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🪣</span>
+                            <span>Move bucket left/right to catch raindrops</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">💧</span>
+                            <span>Collect regular raindrops for points</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">💎</span>
+                            <span>Catch special drops for bonus points</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🍃</span>
+                            <span>Avoid debris and contaminated drops</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">⚡</span>
+                            <span>Build streaks for multiplier bonuses</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🌧️</span>
+                            <span>Conserve water and help the environment!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rainwater-achievements">
+                    <h4>🏆 Water Conservation Achievements:</h4>
+                    <div class="achievements-grid" id="rainwater-achievements">
+                        <div class="achievement locked" data-achievement="water-saver">
+                            <span class="achievement-icon">💧</span>
+                            <span class="achievement-text">Water Saver</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="rain-master">
+                            <span class="achievement-icon">🌧️</span>
+                            <span class="achievement-text">Rain Master</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="conservation-hero">
+                            <span class="achievement-icon">🏆</span>
+                            <span class="achievement-text">Conservation Hero</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solar Panel Builder Game -->
+            <div class="game-container" id="solar-panel-builder-game" style="display: none;">
+                <div class="game-header">
+                    <h3>☀️ Solar Panel Builder Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="solar-game-info">
+                    <div class="solar-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Score:</span>
+                            <span id="solar-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Energy Generated:</span>
+                            <span id="energy-generated">0</span>kW
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Panels Placed:</span>
+                            <span id="panels-placed">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Level:</span>
+                            <span id="solar-level">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Time:</span>
+                            <span id="solar-timer">60</span>s
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solar-controls">
+                    <div class="control-info">
+                        <span>🎮 Drag & Drop Solar Panels onto Buildings</span>
+                    </div>
+                    <div class="efficiency-meter">
+                        <div class="meter-label">☀️ Sun Intensity:</div>
+                        <div class="sun-meter">
+                            <div class="sun-meter-fill" id="sun-meter-fill"></div>
+                        </div>
+                        <div class="meter-value" id="sun-intensity">100%</div>
+                    </div>
+                </div>
+
+                <div id="solar-container">
+                    <div class="solar-background">
+                        <div class="sky-gradient"></div>
+                        <div class="sun-position" id="sun-position">☀️</div>
+                        <div class="clouds-layer">
+                            <div class="cloud-solar" style="left: 20%; animation-delay: 0s;">☁️</div>
+                            <div class="cloud-solar" style="left: 60%; animation-delay: 2s;">⛅</div>
+                        </div>
+                    </div>
+
+                    <div id="solar-game-area">
+                        <div class="buildings-container" id="buildings-container">
+                            <div class="building-slot" data-building="house">
+                                <div class="building-base">🏠</div>
+                                <div class="roof-area" data-roof="house"></div>
+                            </div>
+                            <div class="building-slot" data-building="office">
+                                <div class="building-base">🏢</div>
+                                <div class="roof-area" data-roof="office"></div>
+                            </div>
+                            <div class="building-slot" data-building="factory">
+                                <div class="building-base">🏭</div>
+                                <div class="roof-area" data-roof="factory"></div>
+                            </div>
+                        </div>
+
+                        <div class="energy-indicators" id="energy-indicators">
+                            <!-- Energy flow animations -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solar-panels-inventory">
+                    <h4>🔋 Solar Panel Inventory:</h4>
+                    <div class="panels-grid" id="panels-grid">
+                        <div class="solar-panel-item" draggable="true" data-panel="basic">
+                            <div class="panel-icon">🔋</div>
+                            <div class="panel-info">
+                                <div class="panel-name">Basic Panel</div>
+                                <div class="panel-power">5kW</div>
+                            </div>
+                        </div>
+                        <div class="solar-panel-item" draggable="true" data-panel="advanced">
+                            <div class="panel-icon">⚡</div>
+                            <div class="panel-info">
+                                <div class="panel-name">Advanced Panel</div>
+                                <div class="panel-power">10kW</div>
+                            </div>
+                        </div>
+                        <div class="solar-panel-item" draggable="true" data-panel="premium">
+                            <div class="panel-icon">💎</div>
+                            <div class="panel-info">
+                                <div class="panel-name">Premium Panel</div>
+                                <div class="panel-power">15kW</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solar-game-controls">
+                    <button id="start-solar-game" class="game-control-btn">🎮 Start Building</button>
+                    <button id="pause-solar-game" class="game-control-btn" disabled>⏸️ Pause</button>
+                    <button id="reset-solar-game" class="game-control-btn">🔄 Reset</button>
+                </div>
+
+                <div class="solar-game-instructions">
+                    <h4>☀️ How to Build Solar Panels:</h4>
+                    <div class="instruction-grid">
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🔋</span>
+                            <span>Drag solar panels from inventory to building roofs</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🏠</span>
+                            <span>Different buildings have different roof capacities</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">☀️</span>
+                            <span>Sun intensity affects energy generation</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">⚡</span>
+                            <span>Advanced panels generate more energy</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">☁️</span>
+                            <span>Clouds reduce solar efficiency temporarily</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🌱</span>
+                            <span>Generate clean energy to help the environment!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solar-achievements">
+                    <h4>🏆 Solar Energy Achievements:</h4>
+                    <div class="achievements-grid" id="solar-achievements">
+                        <div class="achievement locked" data-achievement="solar-starter">
+                            <span class="achievement-icon">🔋</span>
+                            <span class="achievement-text">Solar Starter</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="energy-master">
+                            <span class="achievement-icon">⚡</span>
+                            <span class="achievement-text">Energy Master</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="green-builder">
+                            <span class="achievement-icon">🌱</span>
+                            <span class="achievement-text">Green Builder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save the Forest Game -->
+            <div class="game-container" id="save-the-forest-game" style="display: none;">
+                <div class="game-header">
+                    <h3>🌳 Save the Forest Game</h3>
+                    <button class="back-btn" onclick="backToSelection()">← Back to Games</button>
+                </div>
+
+                <div class="forest-game-info">
+                    <div class="forest-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Score:</span>
+                            <span id="forest-score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Trees Saved:</span>
+                            <span id="trees-saved">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Fires Extinguished:</span>
+                            <span id="fires-extinguished">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Level:</span>
+                            <span id="forest-level">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Time:</span>
+                            <span id="forest-timer">60</span>s
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forest-controls">
+                    <div class="control-info">
+                        <span>🎮 Click on fires to extinguish them and save trees!</span>
+                    </div>
+                    <div class="fire-danger-meter">
+                        <div class="meter-label">🔥 Fire Danger Level:</div>
+                        <div class="danger-meter">
+                            <div class="danger-meter-fill" id="danger-meter-fill"></div>
+                        </div>
+                        <div class="meter-value" id="fire-danger">Low</div>
+                    </div>
+                </div>
+
+                <div id="forest-container">
+                    <div class="forest-background">
+                        <div class="sky-layer"></div>
+                        <div class="mountain-layer">⛰️⛰️⛰️</div>
+                        <div class="helicopter-layer" id="helicopter-layer">
+                            <div class="helicopter" id="rescue-helicopter">🚁</div>
+                        </div>
+                        <div class="smoke-effects" id="smoke-effects"></div>
+                    </div>
+
+                    <div id="forest-game-area">
+                        <div class="forest-grid" id="forest-grid">
+                            <!-- Trees and fires will be dynamically generated here -->
+                        </div>
+
+                        <div class="water-drops" id="water-drops">
+                            <!-- Water drop effects -->
+                        </div>
+
+                        <div class="fire-effects" id="fire-effects">
+                            <!-- Fire spread effects -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="firefighting-tools">
+                    <h4>🚒 Firefighting Tools:</h4>
+                    <div class="tools-grid">
+                        <div class="tool-item" id="water-hose">
+                            <div class="tool-icon">💧</div>
+                            <div class="tool-info">
+                                <div class="tool-name">Water Hose</div>
+                                <div class="tool-status">Ready</div>
+                            </div>
+                        </div>
+                        <div class="tool-item" id="fire-extinguisher">
+                            <div class="tool-icon">🧯</div>
+                            <div class="tool-info">
+                                <div class="tool-name">Fire Extinguisher</div>
+                                <div class="tool-status">Ready</div>
+                            </div>
+                        </div>
+                        <div class="tool-item" id="helicopter-water">
+                            <div class="tool-icon">🚁</div>
+                            <div class="tool-info">
+                                <div class="tool-name">Helicopter Drop</div>
+                                <div class="tool-status">Charging</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forest-game-controls">
+                    <button id="start-forest-game" class="game-control-btn">🎮 Start Firefighting</button>
+                    <button id="pause-forest-game" class="game-control-btn" disabled>⏸️ Pause</button>
+                    <button id="reset-forest-game" class="game-control-btn">🔄 Reset</button>
+                </div>
+
+                <div class="forest-game-instructions">
+                    <h4>🔥 How to Fight Forest Fires:</h4>
+                    <div class="instruction-grid">
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🌳</span>
+                            <span>Click on burning trees to extinguish fires</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🔥</span>
+                            <span>Fires spread to nearby trees if not stopped quickly</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">💧</span>
+                            <span>Use water tools to fight different types of fires</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🚁</span>
+                            <span>Call helicopter for large fire emergencies</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">⚡</span>
+                            <span>React quickly - fires spread faster at higher levels</span>
+                        </div>
+                        <div class="instruction-item">
+                            <span class="instruction-icon">🌱</span>
+                            <span>Save the forest and protect wildlife habitats!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forest-achievements">
+                    <h4>🏆 Forest Protection Achievements:</h4>
+                    <div class="achievements-grid" id="forest-achievements">
+                        <div class="achievement locked" data-achievement="fire-fighter">
+                            <span class="achievement-icon">🚒</span>
+                            <span class="achievement-text">Fire Fighter</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="forest-guardian">
+                            <span class="achievement-icon">🌳</span>
+                            <span class="achievement-text">Forest Guardian</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="eco-hero">
+                            <span class="achievement-icon">🏆</span>
+                            <span class="achievement-text">Eco Hero</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery factor-section">
+        <div class="container">
+            <h2 class="section-title">Eco-Friendly Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop"
+                        alt="Recycling">
+                    <div class="gallery-overlay">
+                        <h3>♻️ Recycling</h3>
+                        <p>Waste to resources</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+                        alt="Solar Panels">
+                    <div class="gallery-overlay">
+                        <h3>☀️ Solar Energy</h3>
+                        <p>Clean power source</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
+                        alt="Wind Turbines">
+                    <div class="gallery-overlay">
+                        <h3>💨 Wind Power</h3>
+                        <p>Renewable energy</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop"
+                        alt="Forest">
+                    <div class="gallery-overlay">
+                        <h3>🌲 Beautiful Forests</h3>
+                        <p>Nature's green lungs</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=300&fit=crop"
+                        alt="Electric Vehicle">
+                    <div class="gallery-overlay">
+                        <h3>🚗 Electric Vehicles</h3>
+                        <p>Zero emissions transport</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop"
+                        alt="Composting">
+                    <div class="gallery-overlay">
+                        <h3>🌱 Composting</h3>
+                        <p>Natural fertilizer</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=300&fit=crop"
+                        alt="Green Valley">
+                    <div class="gallery-overlay">
+                        <h3>🏔️ Green Valley</h3>
+                        <p>Sustainable landscape</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
+                        alt="Water Conservation">
+                    <div class="gallery-overlay">
+                        <h3>💧 Water Conservation</h3>
+                        <p>Save every drop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@ecolearn.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Green Street, Eco City, EC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EcoLearn</h3>
+                    <p>Making environmental conservation fun and rewarding.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">🏠 Home</a></li>
+                        <li><a href="#about">ℹ️ About</a></li>
+                        <li><a href="#challenges" target="_blank">🎯 Challenges & Games</a></li>
+                        <li><a href="#quiz">📝 Quiz</a></li>
+                        <li><a href="#ai-camera">🤖 AI Camera</a></li>
+                        <li><a href="#gallery">🖼️ Gallery</a></li>
+                        <li><a href="#contact">📞 Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new challenges and eco-tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Overlay -->
+    <div id="login-overlay" class="login-overlay" style="display: none;">
+        <div class="login-container">
+            <div class="login-form">
+                <div class="form-content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Welcome to EcoLearn</h2>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="login">Login</button>
+                    <button class="tab-btn" data-tab="register">Register</button>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form active">
+                <h3>Login to Your Account</h3>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login-email">Email or User ID</label>
+                        <input type="text" id="login-email" placeholder="Enter your email or user ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="auth-btn">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </form>
+                <p class="auth-switch">Don't have an account? <span class="switch-link" data-tab="register">Register
+                        here</span></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="auth-form">
+                <h3>Create New Account</h3>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="register-name">Full Name</label>
+                        <input type="text" id="register-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-userid">User ID</label>
+                        <input type="text" id="register-userid" placeholder="Choose a unique user ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirm Password</label>
+                        <input type="password" id="register-confirm-password" placeholder="Confirm your password"
+                            required>
+                    </div>
+                    <button type="submit" class="auth-btn">
+                        <i class="fas fa-user-plus"></i> Register
+                    </button>
+                </form>
+                <p class="auth-switch">Already have an account? <span class="switch-link" data-tab="login">Login
+                        here</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Leaflet Map (Open Source Alternative) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Main Script - Load Last -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
